@@ -1,0 +1,93 @@
+{
+  "name": "thumbails",
+  "authors": [
+    "philopian <pdotwdot@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "vue": "^2.0.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "foundation": {
+      "main": [
+        "css/foundation.css",
+        "js/foundation.js"
+      ]
+    },
+    "jquery-ui": {
+      "main": [
+        "jquery-ui.min.js",
+        "themes/base/slider.css"
+      ]
+    },
+    "leaflet.markercluster": {
+      "main": [
+        "**/dist/leaflet.markercluster.js",
+        "**/dist/MarkerCluster.Default.css",
+        "**/MarkerCluster.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.min.css"
+      ]
+    },
+    "datatables": {
+      "main": [
+        "media/css/jquery.dataTables.min.css",
+        "media/css/dataTables.foundation.min.css",
+        "media/css/dataTables.jqueryui.min.css",
+        "media/js/jquery.dataTables.min.js",
+        "media/js/dataTables.foundation.min.js",
+        "media/js/dataTables.jqueryui.min.js"
+      ]
+    },
+    "jquery-accordion": {
+      "main": [
+        "css/jquery.accordion.css",
+        "js/jquery.accordion.js"
+      ]
+    },
+    "TimelineJS": {
+      "main": [
+        "build/css/timeline.css",
+        "build/js/timeline.js",
+        "build/js/storyjs-embed.js"
+      ]
+    },
+    "vis": {
+      "main": [
+        "dist/vis.min.css",
+        "dist/vis.min.js"
+      ]
+    },
+    "modernizr": {
+      "main": [
+        "modernizr.js"
+      ]
+    },
+    "vue": {
+      "main": [
+        "dist/vue.js"
+      ]
+    }
+  }
+}
