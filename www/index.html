@@ -6,21 +6,18 @@
     <title>SANDBOX</title>
     <!-- bower:css -->
     <!-- endbower -->
-    <style media="screen">
-        /* YOUR STYLES HERE*/
-    </style>
+    <link rel="stylesheet" href="css/hello.css" media="screen" title="no title">
 </head>
 
 <body>
 
 
-
+<button id="btn-append-to-component" type="button" name="button">Append to component</button>
 
     <div id="main">
-        <h1>TEsting </h1>
-        <!-- <my-component></my-component> -->
-        <!-- <async-component></async-component> -->
+        <h1>Index (inside #main) </h1>
         <hello-component></hello-component>
+        <page2-component></page2-component>
     </div>
 
 
@@ -33,6 +30,7 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/vue/dist/vue.js"></script>
+    <script src="bower_components/bluebird/js/browser/bluebird.js"></script>
     <!-- endbower -->
     <script type="text/javascript">
 
@@ -53,11 +51,11 @@
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-        // $.get('www/hello.html', function(data) {
+        // $.get('hello.html', function(data) {
         //     console.log(data)
         //
         //     // create compnents
-        //     Vue.component('async-component', {
+        //     Vue.component('hello-component', {
         //       template: data
         //     })
         //
@@ -67,11 +65,13 @@
         //     });
         // });
 /////////////////////////////////////////////////////////////////////////////////////////////
-    Vue.config.debug = true;
+    // Vue.config.debug = true;
     </script>
 
 
     <script src="js/hello.js" charset="utf-8"></script>
+    <script src="js/page2.js" charset="utf-8"></script>
+    <script src="js/services.js" charset="utf-8"></script>
 
 
 </body>
