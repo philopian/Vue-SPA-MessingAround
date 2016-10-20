@@ -14,66 +14,31 @@
 
 <button id="btn-append-to-component" type="button" name="button">Append to component</button>
 
-    <div id="main">
+    <!-- <div id="main">
         <h1>Index (inside #main) </h1>
         <hello-component></hello-component>
         <page2-component></page2-component>
-    </div>
+    </div> -->
 
 
 
-
-
-
-
+  <div id="app">
+    <a v-link="{ path: '/foo' }">Go to Foo</a>
+    <a v-link="{ path: '/bar' }">Go to Bar</a>
+    app
+      <router-view></router-view>
+  </div>
 
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/vue/dist/vue.js"></script>
     <script src="bower_components/bluebird/js/browser/bluebird.js"></script>
+    <script src="bower_components/vue-router/dist/vue-router.js"></script>
     <!-- endbower -->
-    <script type="text/javascript">
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-        // create compnents
-        // Vue.component('my-component', {
-        //   template: '<div>A custom component!</div>'
-        // })
-        //
-        // // create a root instance
-        // var app = new Vue({
-        //     el: '#main'
-        // });
-/////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////
-        // $.get('hello.html', function(data) {
-        //     console.log(data)
-        //
-        //     // create compnents
-        //     Vue.component('hello-component', {
-        //       template: data
-        //     })
-        //
-        //     // create a root instance
-        //     var app = new Vue({
-        //         el: '#main'
-        //     });
-        // });
-/////////////////////////////////////////////////////////////////////////////////////////////
-    // Vue.config.debug = true;
-    </script>
-
 
     <script src="js/hello.js" charset="utf-8"></script>
     <script src="js/page2.js" charset="utf-8"></script>
     <script src="js/services.js" charset="utf-8"></script>
-
-
 </body>
 
 </html>
